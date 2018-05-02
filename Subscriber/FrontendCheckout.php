@@ -152,6 +152,10 @@ class FrontendCheckout implements SubscriberInterface
      */
     private function handleShippingPayment(\Enlight_Controller_ActionEventArgs $args)
     {
+        if (!$this->config->isUseOwnPaymentMethodForZeroAmountOrders()) {
+            return;
+        }
+
         $view = $args->getSubject()->View();
 
         $sPayments = $view->getAssign('sPayments');

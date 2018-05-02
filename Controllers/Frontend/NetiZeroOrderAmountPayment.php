@@ -6,6 +6,7 @@
  */
 
 use NetiOrderAmountHandler\Components\Setup;
+use NetiOrderAmountHandler\Struct\PluginConfig;
 use Shopware\Models\Order\Status as OrderStatus;
 
 /**
@@ -15,6 +16,7 @@ class Shopware_Controllers_Frontend_NetiZeroOrderAmountPayment extends Shopware_
 {
     /**
      * Does all of the action
+     *
      * @throws \Exception
      */
     public function indexAction()
@@ -31,11 +33,15 @@ class Shopware_Controllers_Frontend_NetiZeroOrderAmountPayment extends Shopware_
             return;
         }
 
-        $time = time();
+        /** @var PluginConfig $config */
+        $config = $this->container->get('neti_foundation.plugin_manager_config')
+                                  ->getPluginConfig('NetiOrderAmountHandler');
+        $time   = time();
         $this->saveOrder(
             uniqid('ZeroAmount#') . $time,
             uniqid() . $time,
-            OrderStatus::PAYMENT_STATE_COMPLETELY_PAID
+            $config->isSetStatusCompletelyPaidForZeroAmountOrders() ?
+                OrderStatus::PAYMENT_STATE_COMPLETELY_PAID : OrderStatus::PAYMENT_STATE_OPEN
         );
         $this->redirect(['controller' => 'checkout', 'action' => 'finish']);
     }
