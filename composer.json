@@ -1,0 +1,9 @@
+{
+  "name": "netinventors/sw.ext.neti_order_amount_handler",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "require": {
+    "shopware/shopware": "5.2.*"
+  }
+}

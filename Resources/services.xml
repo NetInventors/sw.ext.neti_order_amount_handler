@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <!-- Synthetics -->
+        <service id="modules" class="Shopware_Components_Modules" synthetic="true" />
+
+        <!-- Event Subscriber -->
+        <service class="NetiOrderAmountHandler\Subscriber\FrontendCheckout"
+                 id="neti_order_amount_handler.subscriber.payment">
+            <argument id="session" type="service" />
+            <argument id="models" type="service" />
+            <argument type="service" id="neti_foundation.plugin_manager_config" />
+            <argument type="service" id="modules" />
+            <tag name="shopware.event_subscriber" />
+        </service>
+
+        <service class="NetiOrderAmountHandler\Subscriber\SaveOrder"
+                 id="neti_order_amount_handler.subscriber.save_order">
+            <argument id="neti_foundation.plugin_manager_config" type="service" />
+            <tag name="shopware.event_subscriber" />
+        </service>
+    </services>
+</container>
