@@ -1,5 +1,9 @@
 ;
-let Neti = Neti || {};
+if ('undefined' === typeof Neti) {
+    let Neti;
+}
+
+Neti = Neti || {};
 
 $.extend(Neti, {
     'OrderAmountHandler': {

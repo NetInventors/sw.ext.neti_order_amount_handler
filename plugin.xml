@@ -5,10 +5,15 @@
     <label lang="de">OrderAmountHandler</label>
     <label lang="en">OrderAmountHandler</label>
 
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <link>http://www.netinventors.de</link>
     <author>Net Inventors GmbH</author>
     <compatibility minVersion="5.2.6"/>
+
+    <changelog version="1.0.1">
+        <changes lang="de"><![CDATA[Doppelte Namespacedefinition im JavaScript behoben]]></changes>
+        <changes lang="en"><![CDATA[Fix duplicate JavaScript namespace error]]></changes>
+    </changelog>
 
     <changelog version="1.0.0">
         <changes lang="de"><![CDATA[[#27842] Initiales Release]]></changes>
