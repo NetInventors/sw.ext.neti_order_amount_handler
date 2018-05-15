@@ -1,4 +1,20 @@
 build:
-    environment:
-        php:
-            version: 7.0.7       #"5.4.41", "5.5.25", "5.6.9", "5.6.16", "7.0.7", "7.0.8", "7.1.0", "hhvm"
+    nodes:
+        analysis:
+            dependencies:
+                before:
+                    - git clone https://github.com/NetInventors/sw.ext.neti_foundation.git
+            environment:
+                node:
+                    version: 6.0.0
+                php:
+                    version: 7.0.8       # Common versions: 5.4, 5.5, 5.6, 7.0 or hhvm
+
+filter:
+    dependency_paths:
+        - "sw.ext.neti_foundation/*"
+
+checks:
+    php:
+        code_rating: true
+        duplication: true
