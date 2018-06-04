@@ -1,6 +1,6 @@
 ;
 if ('undefined' === typeof Neti) {
-    let Neti;
+    var Neti;
 }
 
 Neti = Neti || {};
