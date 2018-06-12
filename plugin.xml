@@ -5,10 +5,19 @@
     <label lang="de">OrderAmountHandler</label>
     <label lang="en">OrderAmountHandler</label>
 
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <link>http://www.netinventors.de</link>
     <author>Net Inventors GmbH</author>
     <compatibility minVersion="5.3.0"/>
+
+    <changelog version="1.0.4">
+        <changes lang="de"><![CDATA[
+[#29147] Fehlerkorrektur bei Schnellbestellungen und nach Registrierung
+]]></changes>
+        <changes lang="en"><![CDATA[
+[#29147] Bugfix for guest orders and after registration
+]]></changes>
+    </changelog>
 
     <changelog version="1.0.3">
         <changes lang="de"><![CDATA[Initialveröffentlichung im Community Store]]></changes>
