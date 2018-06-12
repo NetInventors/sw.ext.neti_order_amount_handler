@@ -91,6 +91,7 @@ class FrontendCheckout implements SubscriberInterface
 
                 return;
             case 'shippingPayment':
+            case 'cart':
                 $this->handleShippingPayment($args);
 
                 return;
