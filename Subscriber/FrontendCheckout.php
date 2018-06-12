@@ -102,9 +102,11 @@ class FrontendCheckout implements SubscriberInterface
      */
     private function isZeroAmountOrder()
     {
-        $orderVariables = $this->session->get('sOrderVariables', new \ArrayObject());
+        if (null !== $orderVariables = $this->session->get('sOrderVariables')) {
+            return !(.0 < \round($orderVariables['sAmount'], 2) || .0 < \round($orderVariables['sAmountWithTax'], 2));
+        }
 
-        return !(.0 < \round($orderVariables['sAmount'], 2) || .0 < \round($orderVariables['sAmountWithTax'], 2));
+        return !(.0 < \round($this->session->get('sBasketAmount'), 2));
     }
 
     /**
