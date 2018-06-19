@@ -1,4 +1,4 @@
-**NOTE**: If you are viewing this on GitHub, please be advised that the repo has been moved to [GitLab](https://gitlab.netinventors.de/-/ide/project/shopware/public/NetiOrderAmountHandler) and we will no longer respond to Pull Requests on this repo, as it is only a mirror of the GitLab repository.
+**NOTE**: If you are viewing this on GitHub, please be advised that the repo has been moved to [GitLab](https://gitlab.netinventors.de/shopware/labs/NetiOrderAmountHandler) and we will no longer respond to Pull Requests on this repo, as it is only a mirror of the GitLab repository.
 
 # OrderAmountHandler
 > Switches the payment methode with zero amount orders (for example paying with coupons or prepaid value)
