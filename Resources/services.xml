@@ -23,5 +23,10 @@
             <argument id="neti_foundation.plugin_manager_config" type="service" />
             <tag name="shopware.event_subscriber" />
         </service>
+
+        <service class="NetiOrderAmountHandler\Subscriber\FrontendAccount"
+                 id="neti_order_amount_handler.subscriber.frontend_account">
+            <tag name="shopware.event_subscriber" />
+        </service>
     </services>
 </container>

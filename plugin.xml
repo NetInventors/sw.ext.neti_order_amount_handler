@@ -5,10 +5,19 @@
     <label lang="de">OrderAmountHandler</label>
     <label lang="en">OrderAmountHandler</label>
 
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <link>http://www.netinventors.de</link>
     <author>Net Inventors GmbH</author>
-    <compatibility minVersion="5.3.0"/>
+    <compatibility minVersion="5.3.0" />
+
+    <changelog version="1.0.5">
+        <changes lang="de"><![CDATA[
+Kostenlos-Zahlungsmethode aus account verstecken
+]]></changes>
+        <changes lang="en"><![CDATA[
+Hide free of charge payment mean from account
+]]></changes>
+    </changelog>
 
     <changelog version="1.0.4">
         <changes lang="de"><![CDATA[
@@ -28,7 +37,7 @@
         <changes lang="de"><![CDATA[[#28952] Readme.md angepasst]]></changes>
         <changes lang="en"><![CDATA[[#28952] Adjusted readme.md]]></changes>
     </changelog>
-    
+
     <changelog version="1.0.1">
         <changes lang="de"><![CDATA[[Doppelte Namespacedefinition im JavaScript behoben]]></changes>
         <changes lang="en"><![CDATA[[Fix duplicate JavaScript namespace error]]></changes>
@@ -40,6 +49,6 @@
     </changelog>
 
     <requiredPlugins>
-        <requiredPlugin pluginName="NetiFoundation" minVersion="2.4.4"/>
+        <requiredPlugin pluginName="NetiFoundation" minVersion="2.4.4" />
     </requiredPlugins>
 </plugin>
