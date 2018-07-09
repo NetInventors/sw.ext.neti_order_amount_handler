@@ -12,17 +12,10 @@
 
     <changelog version="1.0.5">
         <changes lang="de"><![CDATA[
-<<<<<<< Updated upstream
 Kostenlos-Zahlungsmethode aus account verstecken
 ]]></changes>
         <changes lang="en"><![CDATA[
 Hide free of charge payment mean from account
-=======
-Zahlungsart "Kostenlos" aus Account-Seite entfernt
-]]></changes>
-        <changes lang="en"><![CDATA[
-The payment mean "free" will no longer be shown on the account page
->>>>>>> Stashed changes
 ]]></changes>
     </changelog>
 
