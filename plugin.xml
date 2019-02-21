@@ -5,10 +5,19 @@
     <label lang="de">OrderAmountHandler</label>
     <label lang="en">OrderAmountHandler</label>
 
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <link>http://www.netinventors.de</link>
     <author>Net Inventors GmbH</author>
     <compatibility minVersion="5.5.0" />
+
+    <changelog version="2.0.1">
+        <changes lang="de"><![CDATA[
+[#30642] Support für IE10 hinzugefügtt
+]]></changes>
+        <changes lang="en"><![CDATA[
+[#30642] Add support for IE10
+]]></changes>
+    </changelog>
 
     <changelog version="2.0.0">
         <changes lang="de"><![CDATA[
