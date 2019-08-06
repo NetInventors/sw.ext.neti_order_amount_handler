@@ -9,8 +9,8 @@
 * [Plugin landing page](http://www.shopinventors.de/shopware-plugins/orderamounthandler/)
 
 ## Requirements
-* Shopware version >= 5.3.0
-* NetiFoundation >= 2.4.4
+* Shopware version >= 5.6.0
+* NetiFoundation >= 4.0.0
 
 ## Install
 1. If you haven't already, download and install our free plugin "[NetiFoundation](http://store.shopware.com/detail/index/sArticle/162025)" from the Shopware Community Store
