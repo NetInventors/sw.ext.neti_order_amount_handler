@@ -12,10 +12,10 @@
 
     <changelog version="2.0.1">
         <changes lang="de"><![CDATA[
-[#30641] Support für IE10 hinzugefügtt
+[#30642] Support für IE10 hinzugefügtt
 ]]></changes>
         <changes lang="en"><![CDATA[
-[#30641] Add support for IE10
+[#30642] Add support for IE10
 ]]></changes>
     </changelog>
 
