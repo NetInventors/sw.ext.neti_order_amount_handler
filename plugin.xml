@@ -12,10 +12,10 @@
 
     <changelog version="3.0.0">
         <changes lang="de"><![CDATA[
-[#32216] Anpassungen für Shopware 5.6
+[#32197] Anpassungen für Shopware 5.6
 ]]></changes>
         <changes lang="en"><![CDATA[
-[#32216] Adjustments for Shopware 5.6
+[#32197] Adjustments for Shopware 5.6
 ]]></changes>
     </changelog>
 
