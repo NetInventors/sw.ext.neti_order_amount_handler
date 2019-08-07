@@ -8,3 +8,7 @@
 out
 gen
 /.gtm/
+
+/.build/plugins/
+/.build/tmp/
+/.build/update/
